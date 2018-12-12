@@ -1,9 +1,10 @@
 {
   "name": "ember-context",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "React-style context for Ember.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "context"
   ],
   "license": "MIT",
   "author": "",

@@ -1,27 +1,13 @@
 # ember-context
 
-This README outlines the details of collaborating on this Ember addon.
+React-style context for Ember.
+
+## Background
+React offers a [context](https://reactjs.org/docs/context.html) approach which allows sharing data from ancestor components to descendents without having to pass it directly down the component tree. This addon is an attempt to emulate that behaviour in Ember.
+
+## Disclaimer
+Context is usually not the best tool for the job, as it has some drawbacks, both [stylistically](https://reactjs.org/docs/context.html#before-you-use-context) and in terms of [efficiency](https://reactjs.org/docs/context.html#caveats). If you still feel like context is the best solution for your design, then go ahead and use it :wink:
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-context`
-* `npm install`
-* `bower install`
-
-## Running
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+* `ember install ember-context`
