@@ -1,0 +1,21 @@
+<h2>Context Consumer Mixin</h2>
+
+{{#my-context/provider
+  value=(if updatedContext
+    updatedContext
+    (hash testValue="original value")
+  )
+}}
+  {{context-consumer}}
+
+  {{#unless updatedContext}}
+    <div>
+      <button
+        id="update-context-button"
+        {{action (action (mut updatedContext) (hash testValue="updated value"))}}
+      >
+        Update context
+      </button>
+    </div>
+  {{/unless}}
+{{/my-context/provider}}

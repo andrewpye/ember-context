@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('context-consumer-component');
+  this.route('context-consumer-mixin');
 });
 
 export default Router;
