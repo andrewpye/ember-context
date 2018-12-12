@@ -1,8 +1,16 @@
-{{#my-context/provider value=(hash testValue="test value")}}
+{{#my-context/provider value=(if updatedContext updatedContext (hash testValue="original value"))}}
   {{#my-context/consumer as |context|}}
-    <p>
+    <div>
       <strong>Context value:</strong>
-      <span>{{context.value}}</span>
-    </p>
+      <span>{{context.testValue}}</span>
+    </div>
   {{/my-context/consumer}}
+
+  {{#unless updatedContext}}
+    <div>
+      <button {{action (action (mut updatedContext) (hash testValue="updated value"))}}>
+        Update context
+      </button>
+    </div>
+  {{/unless}}
 {{/my-context/provider}}
