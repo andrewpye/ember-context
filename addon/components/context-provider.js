@@ -4,7 +4,7 @@ import layout from '../templates/components/context-provider';
 /**
  * Base consumer component.
  */
-export default Ember.Component.extend({
+export default Component.extend({
   tagName: '',
 
   layout,

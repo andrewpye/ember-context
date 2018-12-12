@@ -1,1 +1,8 @@
-{{outlet}}
+{{#my-context/provider value=(hash testValue="test value")}}
+  {{#my-context/consumer as |context|}}
+    <p>
+      <strong>Context value:</strong>
+      <span>{{context.value}}</span>
+    </p>
+  {{/my-context/consumer}}
+{{/my-context/provider}}
