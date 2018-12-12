@@ -1,6 +1,6 @@
 {
   "name": "ember-context",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React-style context for Ember.",
   "keywords": [
     "ember-addon",
