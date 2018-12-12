@@ -1,8 +1,11 @@
-# ember-context
+# `ember-context`
 
 React-style context for Ember.
 
-## Background
+## What is it?
+If you're tired of passing properties many levels down the component tree, `ember-context` may be the answer you've been looking for.
+
+## Motivation
 React offers a [context](https://reactjs.org/docs/context.html) approach which allows sharing data from ancestor components to descendents without having to pass it directly down the component tree. This addon is an attempt to emulate that behaviour in Ember.
 
 ## Disclaimer
